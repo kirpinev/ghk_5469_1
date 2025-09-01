@@ -156,7 +156,13 @@ export const App = () => {
       <Gap size={96} />
 
       <div className={appSt.bottomBtn}>
-        <ButtonMobile block view="primary" href="" onClick={submit}>
+        <ButtonMobile
+          block
+          view="primary"
+          href=""
+          onClick={submit}
+          disabled={selected === ""}
+        >
           {selected ? "Продолжить" : "Выберите 1 мерч"}
         </ButtonMobile>
       </div>
